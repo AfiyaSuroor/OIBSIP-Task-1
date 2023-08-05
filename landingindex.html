@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.2)), url(bkgrd.jpg);
+            background-size: cover;
+            font-family: sans-serif;
+
+
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+           font-family: Georgia, 'Times New Roman', Times, serif, Impact,  'Arial Narrow Bold', sans-serif;
+           color: rgb(204, 186, 162);
+   
+          
+        }
+        .logo:hover{
+            padding: 10px 16px;
+            border-bottom: 2px solid wheat;
+            border: 2px solid rgba(210, 170, 118, 0.98);
+            transition: 0.4s linear;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            font-size: 20px;
+            position: relative;
+
+        }
+
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(170, 99, 170);
+            transition: 0.5s linear;
+
+        }
+
+        .menu a:hover:before{
+            width: 90%;
+
+        }
+
+
+
+        .register a {
+
+            text-decoration: none;
+            color: white;
+            padding: 10px 18px;
+            font-size: 20px;
+            background-color: rgb(207, 99, 48);
+            border-radius: 8px;
+
+        }
+
+        .register a:hover{
+            background: transparent;
+            border: 2px solid lightsalmon;
+            transition: 0.5s;
+        }
+
+        .header-txt {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: aliceblue;
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+        .header-txt span{
+            letter-spacing: 6.5px;
+            color: beige;
+        }
+
+        .header-txt h1{
+            font-size: 3rem;
+            font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .header-txt a{
+            text-decoration: none;
+            background: rgba(10, 45, 10, 0.868);
+            color: rgb(183, 124, 48);
+            padding: 10px 20px;
+            letter-spacing: 2px;
+            position: relative;
+        
+        }
+        .header-txt a:hover{
+            background: beige;
+            border: 2px solid rgba(70, 44, 9, 0.98);
+            transition: 0.4s;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Infussion-AAW
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Place to Visit</a>
+                <a href="#">Best offers</a>
+                <a href="#">Our sites</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="header-txt">
+            <span>The Palace of Wanderer </span>
+
+
+            <h1>Enjoy your Hike with the accent of INFUSSOIN </h1>
+
+            <br>
+            <a href="#">Book your wander Place</a>
+
+
+        </section>
+    </header>
+</body>
+
+</html>
